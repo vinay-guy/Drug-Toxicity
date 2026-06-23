@@ -1,0 +1,11 @@
+numpy
+pandas
+scikit-learn
+xgboost
+lightgbm
+shap
+streamlit
+plotly
+matplotlib
+seaborn
+rdkit-pypi  # optional; RDKit is best installed via conda-forge on Windows

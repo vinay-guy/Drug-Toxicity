@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  toxpredict:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+    environment:
+      - PYTHONPATH=src
+      # Do NOT set secrets here in version-controlled files. Use docker secrets or set at runtime.
+    restart: unless-stopped
